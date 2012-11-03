@@ -46,12 +46,12 @@ Our API objects are accessed through a REST architecture over https.
 
 ####Pass Templates
 
-A pass template is made up of a header and its hash map field model.
+A pass template, or template, is made up of a header and its hash map field model.
 * The header contains information around the template itself, such as ID, name, description, type (boarding pass, coupon, event..).
 * A field is a a multi-value object identified by a key name. It represents an element of the pass such as "label", "value" , "change message" on update, etc...
 * The "template model" is a hashmap for the fields representation of the pass. The hash map key is the field key name and its value is the fied multiple attributes.
 
-On you have created a pass template in the passtools.com UI, you can get the field through our GET /template/{templateID} api.
+On you have created a template in the passtools.com UI, you can get the field model through our GET /template/{templateID} api.
 You are then free to use that model in order to set its value and create passes based on it.
 
 ####Passes
@@ -67,7 +67,18 @@ We will soon offer deliverability features in order to provide tigher 1:1 analyt
 
 ####Pass Fields
 
+Pass fields, or fields, are elements of the pass. Field attributes are exposed through the template creation flow of passtools.com.
 
+A field is a {key,JSON} entry where the JSON is made of the following attributes
+* key: the key name is clearly exposed in the UI and the get template API. You can rename the key name as desired from the UI.
+* field type: as defined by the Apple's spec, a field can be a TopLevel field, Header, Barcode, Back field, etc...
+* label: the label shown on a PassBook pass (for instance "Discount" for a coupon pass)
+* value: the actual value for a field (for instance Discount: $30 for label:value).
+* required: a true/false boolean needed to keep the integrity of the pass per your template creation definition.
+* changeMessage: the push notification message sent for a field level change (for instance "boarding gate change )
+
+
+The {key,JSON} structure is generic and therefore we expect to enrich the JSON with more attributes as we enrich the functionality of API platform.
 
 
 ### Security
