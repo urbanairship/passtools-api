@@ -86,8 +86,16 @@ The {key,JSON} structure is generic and therefore we expect to enrich the JSON w
 
 
 
+
+
 ## API Doc
 
 The detailed API documentation can be found [here](https://github.com/tello/passtools-api/wiki/Methods).
+
+
+# Feedback
+
+Please send us any feedback at help@passtools.com. 
+We listen carefully to your needs and are working on adding important new functionality as we speak (certificate uploads, push notifications, redemption, internalization, etc..).
 
 
