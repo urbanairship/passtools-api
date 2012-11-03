@@ -16,8 +16,16 @@ You can code directly to the APIs or use the existing client SDKs we have in the
 * [Python](https://github.com/tello/passtools-python)
 
 
-Please note that at this time, the api is open to the early user program only.
+
+## Early API Access Program
+
+The initial rollout is limited to a few early users in order to make sure we can provide the right level of customer service support as we scale up our support systems.
 If interested in the program, please email us at help@passtools.com in order to open up the API UI views and access.
+
+Once enrolled, the UI will give you the ability to 
+* Create/edit pass templates
+* View API Logs 
+
 
 ## Fundamental Concepts
 
@@ -36,7 +44,7 @@ We will then report analytics on the number of installs/uninstalls through the p
 
 Our API objects are accessed through a REST architecture over https.
 
-####Templates
+####Pass Templates
 
 A pass template is made up of a header and its hash map field model.
 * The header contains information around the template itself, such as ID, name, description, type (boarding pass, coupon, event..).
@@ -57,12 +65,14 @@ That pass can then be delivered to you consumer base, either attached as a file 
 We will soon offer deliverability features in order to provide tigher 1:1 analytics from your passes to a consumer and in order for you to avoid web hosting pass URLS.
 
 
-####Fields
+####Pass Fields
 
 
 
 
 ### Security
+
+
 
 
 ## API Doc
