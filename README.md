@@ -15,3 +15,7 @@ You can code directly to the APIs or use the existing client SDKs we have in the
 
 
 
+
+The detailed API documentation can be found [here](https://github.com/tello/passtools-api/wiki/Methods).
+
+
