@@ -59,7 +59,7 @@ You are then free to use that model in order to set its value and create passes 
 Creating a pass is as simple as passing the field model into the POST /pass/{templateId} api with the model as a {key,JSON} form field array. 
 The field model is the pass template with values set by your application needs.
 
-Once a personalized pass is created, you can download it as a file from your api caller through the GET /pass/{passID}/download, or through our SDKs.
+Once a personalized pass is created, you can update it , as well as download it as a file from your api caller through the GET /pass/{passID}/download, or through our SDKs.
 That pass can then be delivered to you consumer base, either attached as a file to an email, or through an URL where you will host it, or SMS.
 
 We will soon offer deliverability features in order to provide tigher 1:1 analytics from your passes to a consumer and in order for you to avoid web hosting pass URLS.
