@@ -84,6 +84,9 @@ The {key,JSON} structure is generic and therefore we expect to enrich the JSON w
 ### Security
 
 
+* Our APIs only work under 2048 bit HTPPS encrypted connections to ensure your data is private from client to server connections.
+* Access is authenticated through a unique secret key which we provide to you during the onboarding process. It is your responsibility to keep this key well guarded as it represents your identity.
+* We assign a unique Apple Certificate to your passes to ensure the Certificate is only used by you.
 
 
 
@@ -96,6 +99,6 @@ The detailed API documentation can be found [here](https://github.com/tello/pass
 # Feedback
 
 Please send us any feedback at help@passtools.com. 
-We listen carefully to your needs and are working on adding important new functionality as we speak (certificate uploads, push notifications, redemption, internalization, etc..).
+We listen carefully to your needs and are working on adding important requested functionality (certificate uploads, push notifications, redemption, internalization, etc..).
 
 
