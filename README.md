@@ -9,6 +9,7 @@ Official documentation and resources for the Passtools.com REST API.
 ## Overview
 
 The PassTools API enables you to easily create/update Apple's PassBook passes (simply called _passes_ in our system).
+If you are not yet familiar with PassBook, please start [there](https://developer.apple.com/passbook/)
 
 You can code directly to the APIs or use the existing client SDKs we have in the following languages:
 * [Java](https://github.com/tello/passtools-java)
@@ -87,7 +88,7 @@ The {key,JSON} structure is generic and therefore we expect to enrich the JSON w
 
 * Our APIs only work under 2048 bit HTPPS encrypted connections to ensure your data is private from client to server connections.
 * Access is authenticated through a unique secret key which we provide to you during the onboarding process. It is your responsibility to keep this key well guarded as it represents your identity.
-* We assign a unique Apple Certificate to your passes to ensure the Certificate is only used by you, or you can use your own Apple Developer certificate.
+* You can either use your own Apple's certificate to sign passes, or we will assign a unique certificate to your account.
 
 
 
