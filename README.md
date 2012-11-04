@@ -101,6 +101,6 @@ The detailed API documentation can be found [here](https://github.com/tello/pass
 # Feedback
 
 Please send us any feedback at help@passtools.com. 
-We listen carefully to your needs and are working on adding important requested functionality (certificate uploads, push notifications, redemption, internalization, etc..).
+We listen carefully to your needs and are working on adding important requested functionality (web certificate uploads, push notifications, redemption, internalization, etc..).
 
 
