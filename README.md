@@ -8,7 +8,7 @@ Official documentation and resources for the Passtools.com REST API.
 
 ## Overview
 
-The PassTools API enables you to easily create/update Apple's PassBook passes, called passes in our system.
+The PassTools API enables you to easily create/update Apple's PassBook passes (simply called _passes_ in our system).
 
 You can code directly to the APIs or use the existing client SDKs we have in the following languages:
 * [Java](https://github.com/tello/passtools-java)
@@ -32,8 +32,9 @@ Once enrolled, the UI will give you the ability to
 The primary concept is that passes are created from pass templates. 
 
 Passes can then be
-* Updated so they they can be updated on an existing iPhone PassBook and later automatically 
-through a push notification system (coming soon).
+* Created with your custom data
+* Completely changed and re-added to an existing user's Passbook
+* Updated with certain field changes, so the user's pass would be updated automatically via push notification (coming soon).
 * Delivered through your own systems (emails, as URLs or SMS) to your consumers.
 
 We will then report analytics on the number of installs/uninstalls through the passtools.com UI.
@@ -46,12 +47,12 @@ Our API objects are accessed through a REST architecture over https.
 
 ####Pass Templates
 
-A pass template, or template, is made up of a header and its hash map field model.
-* The header contains information around the template itself, such as ID, name, description, type (boarding pass, coupon, event..).
-* A field is a a multi-value object identified by a key name. It represents an element of the pass such as "label", "value" , "change message" on update, etc...
-* The "template model" is a hashmap for the fields representation of the pass. The hash map key is the field key name and its value is the fied multiple attributes.
+A _pass template_, or _template_, is made up of a header and its hash map field model.
+* The _header_ contains information around the template itself, such as ID, name, description, type (boarding pass, coupon, event..).
+* A _field_ is a a multi-value object identified by a key name. It represents an element of the pass such as _label_, _value_ , _change message_ on update, etc...
+* The _template model_ is a hashmap for the fields representation of the pass. The hash map key is the field _key name_ and its value is the fied multiple attributes.
 
-On you have created a template in the passtools.com UI, you can get the field model through our GET /template/{templateID} api.
+Once you have created a template in the passtools.com UI, you can get the field model through our GET /template/{templateID} api.
 You are then free to use that model in order to set its value and create passes based on it.
 
 ####Passes
@@ -70,12 +71,12 @@ We will soon offer deliverability features in order to provide tigher 1:1 analyt
 Pass fields, or fields, are elements of the pass. Field attributes are exposed through the template creation flow of passtools.com.
 
 A field is a {key,JSON} entry where the JSON is made of the following attributes
-* key: the key name is clearly exposed in the UI and the get template API. You can rename the key name as desired from the UI.
-* field type: as defined by the Apple's spec, a field can be a TopLevel field, Header, Barcode, Back field, etc...
-* label: the label shown on a PassBook pass (for instance "Discount" for a coupon pass)
-* value: the actual value for a field (for instance Discount: $30 for label:value).
-* required: a true/false boolean needed to keep the integrity of the pass per your template creation definition.
-* changeMessage: the push notification message sent for a field level change (for instance "boarding gate change )
+* _key:_ the key name is clearly exposed in the UI and the get template API. You can rename the key name as desired from the UI.
+* _field type:_ as defined by the Apple's spec, a field can be a TopLevel field, Header, Barcode, Back field, etc...
+* _label:_ the label shown on a PassBook pass (for instance "Discount" for a coupon pass)
+* _value:_ the actual value for a field (for instance Discount: $30 for label:value).
+* _required:_ a true/false boolean needed to keep the integrity of the pass per your template creation definition.
+* _changeMessage:_ the push notification message sent for a field level change (for instance "boarding gate change )
 
 
 The {key,JSON} structure is generic and therefore we expect to enrich the JSON with more attributes as we enrich the functionality of API platform.
@@ -86,7 +87,7 @@ The {key,JSON} structure is generic and therefore we expect to enrich the JSON w
 
 * Our APIs only work under 2048 bit HTPPS encrypted connections to ensure your data is private from client to server connections.
 * Access is authenticated through a unique secret key which we provide to you during the onboarding process. It is your responsibility to keep this key well guarded as it represents your identity.
-* We assign a unique Apple Certificate to your passes to ensure the Certificate is only used by you.
+* We assign a unique Apple Certificate to your passes to ensure the Certificate is only used by you, or you can use your own Apple Developer certificate.
 
 
 
