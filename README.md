@@ -68,7 +68,7 @@ We will soon offer deliverability features in order to provide more advanced 1:1
 
 ####Pass Fields
 
-Pass fields, or fields, are elements of the pass. Field attributes are exposed through the template creation flow of passtools.com.
+Pass fields, or fields, are elements of the pass. Field attributes are exposed through the template creation flow of PassTools.
 
 A field is a {key,JSON} entry where the JSON is made of the following attributes:
 * _key:_ the key name is clearly exposed in the UI and the get template API. You can rename the key name as desired from the UI.
