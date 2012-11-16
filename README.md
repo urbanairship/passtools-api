@@ -34,7 +34,7 @@ The primary concept is that passes are created from pass templates.
 Passes can then be:
 * Created with your custom data.
 * Completely changed and re-added to an existing user's Passbook.
-* Updated with certain field changes, so the user's pass would be updated automatically via push notification (coming soon).
+* Updated with certain field changes, so the user's pass would be updated automatically via push notification.
 * Delivered through your own systems (email, SMS, URL) to your customers.
 
 We will then provide analytics on the number of installs/uninstalls through the PassTools UI.
