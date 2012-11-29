@@ -85,7 +85,7 @@ The {key,JSON} structure is generic and therefore we expect to enrich the JSON w
 ## Security
 
 
-* Our APIs only work under 2048 bit HTPPS encrypted connections to ensure your data is private from client to server connections.
+* Our APIs only work under 2048 bit HTTPS encrypted connections to ensure your data is private from client to server connections.
 * Access is authenticated through a unique secret key which we provide to you during the onboarding process. It is your responsibility to keep this key well guarded as it represents your identity.
 * You can either use your own Apple's certificate to sign passes, or we will assign a unique certificate to your account.
 
