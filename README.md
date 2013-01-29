@@ -66,6 +66,16 @@ That pass can then be delivered to your customers, either attached as a file to 
 We will soon offer deliverability features in order to provide more advanced 1:1 analytics from your passes to a consumer and in order for you to avoid web hosting pass URLs.
 
 
+####Locations
+
+We enable to set locations at the pass level in order to create dynamic personalized passes, such as boarding passes or coupons.
+For that matter, we provide 2 api endpoints POST pass/{passId}/locations where you can add up to 10 locations for a given pass, as well as the ability to delete a location/pass.
+
+Please note that if the parent template of the pass had locations assigned, the pass will inherit those locations unless you are passing more locations through the API such that count(of location through API) + count( template locations) > 10.
+In practice, if you are really trying to dynamically add locations to your passes, it is best to create a template with no locations.
+
+
+
 ####Pass Fields
 
 Pass fields, or fields, are elements of the pass. Field attributes are exposed through the template creation flow of PassTools.
