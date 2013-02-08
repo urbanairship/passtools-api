@@ -93,7 +93,7 @@ The {key,JSON} structure is generic and therefore we expect to enrich the JSON w
 
 
 
-Please note that that fields that relate to dates shall be in the following ISO 8601 format: "2013-02-08T09:00Z".
+Please note that that fields that relate to dates shall be in the following ISO 8601 format: "2013-02-08T09:00:00Z" up to the second.
 
 
 ## Security
