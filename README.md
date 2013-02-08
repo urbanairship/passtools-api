@@ -24,7 +24,7 @@ If you are interested in the program, please email us at help@passtools.com and 
 
 Once you are given access, you will have the ability to:
 * Create/edit pass templates.
-* View API Logs.
+* View API Logs from the web front end in the Activity pages.
 
 
 ## Fundamental Concepts
