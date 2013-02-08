@@ -92,6 +92,10 @@ A field is a {key,JSON} entry where the JSON is made of the following attributes
 The {key,JSON} structure is generic and therefore we expect to enrich the JSON with more attributes as we enrich the functionality of API platform.
 
 
+
+Please note that that fields that relate to dates shall be in the following ISO 8601 format: "2013-02-08T09:00Z".
+
+
 ## Security
 
 
