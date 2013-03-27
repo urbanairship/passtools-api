@@ -65,6 +65,14 @@ That pass can then be delivered to your customers, either attached as a file to 
 
 We will soon offer deliverability features in order to provide more advanced 1:1 analytics from your passes to a consumer and in order for you to avoid web hosting pass URLs.
 
+####Tags
+
+You can associate tags to passes and then update passes that contain that tag with the update change field set.
+This is a useful mechanism to do batch updates for instance. For example, let's say your need to update boarding passes for a flight that is delayed.
+You can tag your boarding passes for a flight by tag=(fight_number,day) and then update all boarding passes for that tag with a new departure date.
+
+
+
 
 ####Locations
 
