@@ -116,7 +116,7 @@ Please note that that fields that relate to dates shall be in the following ISO 
 
 ## API Doc
 
-The detailed API documentation can be found [here](https://github.com/tello/passtools-api/wiki/Methods_1.1).
+The detailed API documentation can be found [here](https://github.com/tello/passtools-api/wiki/Methods).
   
 
 
