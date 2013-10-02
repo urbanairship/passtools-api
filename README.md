@@ -16,6 +16,9 @@ You can code directly to the APIs or use the existing client SDKs we have in the
 * [Python](https://github.com/tello/passtools-python)
 * [Ruby](https://github.com/tello/passtools-ruby)
 
+## API Access
+
+In order to enable API access for your account, please contact [Sales](http://urbanairship.com/contact).
 
 ## Fundamental Concepts
 
