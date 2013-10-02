@@ -112,7 +112,7 @@ The detailed API documentation can be found [here](https://github.com/tello/pass
 
 ## Feedback
 
-Please send us any feedback to help@passtools.com. 
+Please send any feedback to support@urbanairship.com.
 We listen carefully to your needs and are working on adding important requested functionality (e.g. web certificate uploads, push notifications, redemption, internationalization, etc.).
 
 
