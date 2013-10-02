@@ -17,16 +17,6 @@ You can code directly to the APIs or use the existing client SDKs we have in the
 * [Ruby](https://github.com/tello/passtools-ruby)
 
 
-## Early API Access Program
-
-The initial rollout of the PassTools API is limited to a few early users in order to make sure we can provide a high level of customer support as we scale up our support systems.
-If you are interested in the program, please email us at help@passtools.com and we will do our best to get you access as soon as possible.
-
-Once you are given access, you will have the ability to:
-* Create/edit pass templates.
-* View API Logs from the web front end in the Activity pages.
-
-
 ## Fundamental Concepts
 
 The primary concept is that passes are created from pass templates. 
